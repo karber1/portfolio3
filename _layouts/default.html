@@ -5,8 +5,19 @@
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
+
   </head>
   <body>
-    {{ content}}
+    {%include header.html %}
+    {%include home.html %}
+    {%include about.html %}
+    {%include contact.html %}
+    {%include footer.html %}
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <script src="/assets/JS/anime-master/lib/anime.min.js"></script>
+    <script src="/assets/JS/main.js"></script>
   </body>
 </html>

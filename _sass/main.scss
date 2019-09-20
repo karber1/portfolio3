@@ -1,9 +1,19 @@
-$backgroundColor: #ffffff;
+$backgroundColor: gray;
 $bodyColor: #000000;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$bodyFont: 'Assistant', sans-serif;
+$otherFont: 'Josefin Sans', sans-serif;
+
 
 body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
+  margin: 0;
+
 }
+
+@import "header.scss";
+@import "home.scss";
+@import "about.scss";
+@import "contact.scss";
+@import "footer.scss";
