@@ -1,21 +1,115 @@
-.about-container{
-    margin: 5px;
-    background-color: #565CB3;
-    border-radius: 5px;
-    z-index: 1;
-    color: orange;
-    padding: 15px;
+@media(max-width: 700px ){
 
-    .about-column{
-        margin: 10px;
-        h1{
-            font-size: 5vh;
-        }
-        p{
-            font-size: 3vh;
+    .about-container{
+        margin: 5px;
+        margin-top: 50px;
+        background-color: #565CB3;
+        border-radius: 5px;
+        z-index: 1;
+        color: orange;
+        padding: 15px;
+        box-shadow: -1px 3px 12px -3px rgba(0,0,0,0.75);
+    
+        .about-column{
+            text-align:center;
             margin: 10px;
-            padding-bottom: 15px;
+            display:flex;
+            flex-direction: column;
+            h1{
+                align-self: center;
+                font-size: 5vh;
+
+            }
+            p{
+                font-size: 4vh;
+                margin: 10px;
+                padding-bottom: 15px;
+                text-align: center;
+            }
+    
+            .languages{
+                text-align: center;
+                width: 60%;
+                margin-left: 50%;
+                transform: translateX(-50%);
+                background-color: rgb(20, 108, 114);
+                color: orange;
+                border-radius: 5px;
+                box-shadow: -1px 3px 12px -3px rgba(0,0,0,0.75);
+                padding: 3%;
+
+                ul{
+                    list-style-type: none;
+                    padding-inline-start: 0px;
+
+                    li{
+                        font-size: 5vh;
+                    }
+                }
+            }
         }
     }
+}
 
+
+
+@media(min-width: 701px){
+
+    .about-container{
+        margin: 20px;
+        margin-top: 50px;
+        background-color: #565CB3;
+        border-radius: 5px;
+        z-index: 1;
+        color: orange;
+        padding: 15px;
+        box-shadow: -1px 3px 12px -3px rgba(0,0,0,0.75);
+
+    
+        .about-column{
+            margin: 10px;
+            display:flex;
+            flex-direction: row;
+
+
+            .about-text{
+                padding: 3%;
+
+                h1{
+                    font-size: 5vh;
+                    text-align: center;
+                }
+                p{
+                    align-self: center;
+                    font-size: 5vh;
+                    /* margin: 10px; */
+                    padding-bottom: 15px;
+                    padding: 0 5%;
+                }
+            }
+    
+            .languages{
+                text-align: center;
+                color: orange;
+                border-radius: 5px;
+                box-shadow: -1px 3px 12px -3px rgba(0,0,0,0.75);
+                padding: 3%;
+                align-self: center;
+                background-color: rgb(20, 108, 114);
+
+                
+
+                ul{
+                    list-style-type: none;
+                    padding-inline-start: 0px;
+
+                    li{
+                        font-size: 5vh;
+                    }
+                }
+
+            }
+        }
+    
+    }
 }

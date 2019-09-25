@@ -1,5 +1,6 @@
 @media(max-width: 700px) {
     .footer{
+        margin-top: 50px;
         background-color: rgb(20, 108, 114);
         width: 100%;
         height: 40%;
@@ -7,6 +8,7 @@
         display: flex;
         flex-direction: column;
         bottom: 0;
+        box-shadow: -1px 3px 12px -3px rgba(0,0,0,0.75);
 
         .foot-container{
             display:flex;
@@ -32,7 +34,7 @@
                 }
             }
     
-            #sign{
+            .sign{
                 width: 100%;
                 align-items: center;
                 text-align:center;
@@ -55,4 +57,75 @@
         }
 
     }
+}
+
+
+@media(min-width: 701px){
+    .footer{
+        margin-top: 50px;
+        background-color: rgb(20, 108, 114);
+        width: 100%;
+        height: 40%;
+        color: #FF9359;
+        display: flex;
+        flex-direction: column;
+        bottom: 0;
+        box-shadow: -1px 3px 12px -3px rgba(0,0,0,0.75);
+
+        .foot-container{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            #github{
+                width: 50%;
+                text-align: center;
+                img{
+                    margin: 20px;
+                    width: 50px;
+                    transition: 0.3s ease-in-out;
+                    
+                    &:hover{
+                        transform: scale(1.5);
+                    }
+                }
+            }
+            #linkedIn{
+                width: 50%;
+                text-align: center;
+                img{
+                    margin: 20px;
+                    width: 50px;
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        transform: scale(1.5);
+                    }
+                }
+            }
+    
+            .sign{
+                width: 100%;
+                align-items: center;
+                text-align:center;
+                h2{
+                    font-size: 5vh;
+                }
+                div{
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    img{
+                        width: 100px;
+                    }
+                    p{
+                        font-size: 4vh;
+                    }
+
+                }
+            }
+        }
+
+    }
+
 }

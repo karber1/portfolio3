@@ -1,34 +1,77 @@
 @media (max-width: 700px) {
 .home-container{
     margin: 5px;
+    margin-top: 50px;
+    height: 800px;
     display:flex;
+    flex-direction: column;
+    align-items: center;
+
     background-color: #8DB37B;
     color: #565CB3;
     border-radius: 5px;
     padding: 15px;
+    box-shadow: -1px 3px 12px -3px rgba(0,0,0,0.75);
 
     .presentation{
 
-        h1{
-            margin: 5px;
-            font-size: 5vh;
-        }
-        h2{
-            margin: 5px;
-            font-size: 3vh;
+        .presentation-text {
+            position: relative;
+            font-weight: 900;
+            font-size: 10vh;
+            text-align: center;
+
+          }
+
+          .presentation-text .text-wrapper {
+              position: relative;
+              display: inline-block;
+              padding-top: 0.2em;
+              padding-right: 0.05em;
+              padding-bottom: 0.1em;
+              overflow: hidden;
+            }
+            .presentation-text .letter {
+                transform-origin: 0 100%;
+                display: inline-block;
+                line-height: 1em;
+            }
             
-        }
+            .presentation-text2{
+               position: relative;
+               font-weight: 900;
+               font-size: 7vh;
+               text-align: center;
+               
+           } 
+          .presentation-text2 .text-wrapper {
+            position: relative;
+            display: inline-block;
+            padding-top: 0.2em;
+            padding-right: 0.05em;
+            padding-bottom: 0.1em;
+            overflow: hidden;
+          }
+          .presentation-text2 .letter {
+            transform-origin: 0 100%;
+            display: inline-block;
+            line-height: 1em;
+          }
+          
     }
     .character{
         background-color: teal;
-        display:block;
-        height: 200px;
-        width: 200px;
+        display: flex;
+        height: 150px;
+        width: 150px;
         margin: 15px;
         border-radius: 50%;
-        
+        align-self: center;
+        margin-top: 40px;
+        justify-content: center;
         img{
-            height: 300px;
+            height: 150px;
+
         }
            
     }
@@ -39,5 +82,86 @@
 
 
 @media (min-width: 701px){
+
+    .home-container{
+        margin: 20px;
+        margin-top: 50px;
+        display:flex;
+        background-color: #8DB37B;
+        color: #565CB3;
+        border-radius: 5px;
+        padding: 15px;
+        box-shadow: -1px 3px 12px -3px rgba(0,0,0,0.75);
+
+    
+        .presentation{
+            padding-bottom: 10%;
+            align-self: center;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            .presentation-text {
+                position: relative;
+                font-weight: 900;
+                font-size: 15vh;
+                align-self: center;
+                
+
+              }
+              .presentation-text .text-wrapper {
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                
+              }
+              .presentation-text .letter {
+                opacity: 0;
+                transform-origin: 0 100%;
+                display: inline-block;
+                line-height: 1em;
+              }
+
+              .presentation-text2{
+                position: relative;
+                font-weight: 900;
+                font-size: 7vh;
+                text-align: center;
+                
+            } 
+           .presentation-text2 .text-wrapper {
+             position: relative;
+             display: inline-block;
+             overflow: hidden;
+           }
+
+           .presentation-text2 .letter {
+             transform-origin: 0 100%;
+             opacity: 0;
+             display: inline-block;
+             line-height: 1em;
+           }
+        }
+        .character{
+            background-color: teal;
+            align-self:center;
+            height: 250px;
+            width: 250px;
+            margin: 15px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            position:absolute;
+            left: 60%;
+
+            img{
+                align-self: center;
+                height: 250px;
+
+            }
+               
+        }
+    }
+
 
 } 
